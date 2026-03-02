@@ -1,0 +1,83 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatarWrap {
+  position: relative;
+}
+
+.avatarButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  background: #fae9f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(142, 164, 244, 0.4);
+  }
+}
+
+.avatarImg {
+  width: 55%;
+  height: 55%;
+  object-fit: cover;
+}
+
+.popper {
+  z-index: 50;
+  min-width: max-content;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--color-border);
+}
+
+.popperItemTitle {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 14px;
+  color: var(--color-text, #1f2937);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 8px;
+}
+
+.popperItem {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 14px;
+  color: var(--color-text, #1f2937);
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-radius: 5px;
+
+  &:hover {
+    background: #f3f4f6;
+  }
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
